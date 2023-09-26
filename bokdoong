@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My bokdoong</title>
+    <style>
+        *{
+            margin: 0; padding: 0; box-sizing: border-box; font-family: Arial;
+        }
+        li {list-style: none;}
+        a {text-decoration: none; color: inherit;}
+        img {vertical-align: top;}
+        html{scroll-behavior: smooth;}
+        .con {height: 100vh; display: flex; align-items: center; justify-content: center; color: #ffffff;}
+        .con h2{
+            font-size: 30px;
+        }
+        header{
+            background: #000000; padding: 20px 30px; color: white; display: flex; align-items: center;
+            justify-content: space-between; position: fixed; top: 60px; width: 90%; z-index: 10;
+            left: 50%; transform: translateX(-50%)
+        }
+            header nav ul{
+                display: flex;
+            }
+            header nav ul li{
+                margin-left: 50px; font-weight: bold;
+            }
+            #about {
+                position: relative;
+                overflow: hidden;
+            }
+        #about video{
+            position: absolute;     /*웹페이지에 들어갈 컨텐츠를 공중에 띄우는 문구*/
+            z-index: -1; top: 0; left:0;
+        }
+        #about h2{
+            font-size: 80px;
+        }
+        #pro1 {
+            background: url(img2/3.jpg) center/cover;
+            background-attachment: fixed;
+        }
+        #pro2 {
+            background: url(img2/10.jpg) center/cover;
+            background-attachment: fixed;
+        }
+        #pro3 {
+            background: url(img2/11.jpg) center/cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <div calss="wrap">
+        <header> <!-- 상단 메뉴바 작성 스크립트-->
+            <h1><i class="이미티콘가져온거 이름"></i>Owo.bokdoong</h1>
+            <nav>
+                <ul>
+                    <li><a href="baby">Baby</a></li> <!-- -->
+                    <li><a href="pro1">I LOVE</a></li>
+                    <li><a href="pro2">My Cats</a></li>
+                    <li><a href="pro3">Photo</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="baby" class="con">
+            <h2>Baby</h2>
+            <video autoplay muted loop>   <!-- 음소거해야 자동재생됨.-->
+                <source src="img2/1.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="pro1" class="con" class="gallery">
+            <h2>I LOVE</h2>
+        </div>
+        <div id="pro2" class="con" class="gallery">
+            <h2>My Cats</h2>
+        </div>
+        <div id="pro3" class="con" class="gallery">
+            <h2>Photo</h2>
+        </div>
+    </div>
+
+</body>
+</html>
